@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Metadatos para PWA -->
+    <meta name="theme-color" content="#FFD700">
+    <meta name="description" content="Sistema de pago EMAPA - Banco Pichincha">
+    <meta name="author" content="Banco Pichincha">
+
+    <!-- Título de la aplicación -->
+    <title>EMAPA - Banco Pichincha</title>
+
+    <!-- Iconos para dispositivos -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="EMAPA - Banco Pichincha">
+
+    <!-- Preloader CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background-color: #F5F5F5;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+        }
+
+        /* Loading screen */
+        .expo-loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #FFD700;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .expo-loading-logo {
+            width: 60px;
+            height: 60px;
+            background-color: #003366;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+
+        .expo-loading-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        .expo-loading-subtitle {
+            font-size: 14px;
+            color: #003366;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loading screen -->
+    <div class="expo-loading-screen" id="loading-screen">
+        <div class="expo-loading-logo">P</div>
+        <div class="expo-loading-text">BANCO PICHINCHA</div>
+        <div class="expo-loading-subtitle">Cargando aplicación...</div>
+    </div>
+
+    <!-- La aplicación React Native Web se montará aquí -->
+    <div id="root"></div>
+
+    <script>
+        // Ocultar pantalla de carga cuando la app esté lista
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const loadingScreen = document.getElementById('loading-screen');
+                if (loadingScreen) {
+                    loadingScreen.style.opacity = '0';
+                    setTimeout(() => {
+                        loadingScreen.style.display = 'none';
+                    }, 300);
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

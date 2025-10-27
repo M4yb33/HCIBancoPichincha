@@ -1,0 +1,39 @@
+{
+    "expo": {
+        "name": "EMAPA Banco Pichincha",
+        "slug": "emapa-banco-pichincha",
+        "version": "1.0.0",
+        "sdkVersion": "54.0.0",
+        "orientation": "portrait",
+        "userInterfaceStyle": "light",
+        "splash": {
+            "backgroundColor": "#FFD100",
+            "resizeMode": "contain"
+        },
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.emapa.bancopichincha"
+        },
+        "android": {
+            "package": "com.emapa.bancopichincha"
+        },
+        "web": {
+            "bundler": "metro",
+            "favicon": "./assets/favicon.png",
+            "name": "EMAPA - Banco Pichincha",
+            "shortName": "EMAPA-BP",
+            "lang": "es",
+            "scope": "/",
+            "themeColor": "#FFD700",
+            "backgroundColor": "#F5F5F5",
+            "startUrl": "/",
+            "display": "standalone",
+            "orientation": "portrait"
+        },
+        "platforms": [
+            "ios",
+            "android",
+            "web"
+        ]
+    }
+}
