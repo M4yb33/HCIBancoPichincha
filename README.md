@@ -297,7 +297,3 @@ Este proyecto aplica los **10 principios heurísticos de Nielsen** y el **Modelo
 - **Arquitectura**: Clean Architecture + TypeScript
 - **Materia**: Interacción Humano Computador
 - **Estado**: ✅ Funcional y completo
-
----
-
-**¡Tu aplicación está lista para usar en cualquier dispositivo y desde cualquier ubicación!** 🚀📱💻
